@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Torneo de Cubos Rubik</title>
-    <!-- Importación de Tailwind CSS para facilitar el diseño responsivo -->
+    <title>Reglas</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Rubik%27s_cube_scrambled.svg/800px-Rubik%27s_cube_scrambled.svg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .content-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <!-- Barra de navegación superior -->
     <nav class="bg-gray-800 p-4 text-white">
         <div class="container mx-auto flex justify-between items-center">
-            <!-- Botón de inicio con un icono de casa -->
             <button class="text-2xl">🏠</button>
-            <!-- Título central de la página -->
             <h1 class="text-lg font-bold">Torneo de Cubos Rubik</h1>
-            <!-- Menú de navegación con enlaces a las diferentes páginas -->
             <ul class="flex space-x-4">
                 <li><a href="index.html" class="hover:underline bg-blue-600 px-3 py-1 rounded">Reglas</a></li>
                 <li><a href="bases.html" class="hover:underline">Bases</a></li>
@@ -24,12 +33,21 @@
             </ul>
         </div>
     </nav>
-    <!-- Contenido principal de la página -->
-    <main class="p-6">
-        <!-- Título de la sección -->
-        <h2 class="text-2xl font-semibold">Bienvenidos al Torneo de Cubos Rubik</h2>
-        <!-- Breve descripción del contenido de la página -->
-        <p class="mt-2">Descubre a los mejores competidores y los horarios del torneo.</p>
+    <main class="p-6 content-container">
+        <h2 class="text-2xl font-semibold text-green-600">REGLAS DE CONCURSO:</h2>
+        <div class="bg-white p-6 rounded-lg shadow-md border border-blue-500">
+            <ol class="list-decimal pl-6 space-y-2">
+                <li>El concursante entregará el cubo al juez.</li>
+                <li>El juez entregará el cubo a un mezclador y este lo mezclará con 15 movimientos aleatorios. Durante este tiempo el concursante no podrá ver el cubo.</li>
+                <li>Una vez mezclado lo pondrá en la mesa y lo tapará con una caja.</li>
+                <li>Inspección y armado. El juez destapará el cubo y el concursante lo podrá tomar para inspeccionarlo, contará con 15 segundos de inspección tiempo en el que no deberá manipularlo. Pasado este tiempo comenzará con el armado del cubo.</li>
+                <li>Una vez terminado de armar el cubo lo deja sobre la mesa nuevamente y el juez registra el tiempo que marca el reloj.</li>
+                <li>Si el concursante no comienza el armado en los primeros 10 segundos será descalificado.</li>
+                <li>Si el armado del cubo excede los 3 minutos se da por terminado ese intento.</li>
+                <li>Cada jugador armará el cubo tres veces consecutivas y se tomará el menor tiempo de armado.</li>
+                <li>En caso de empate entre dos o más participantes, se dará otra oportunidad que será definida por el jurado.</li>
+            </ol>
+        </div>
     </main>
 </body>
 </html>
